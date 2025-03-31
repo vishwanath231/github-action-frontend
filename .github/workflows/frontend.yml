@@ -25,18 +25,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # - name: Navigate to project directory
-      #   run: cd /actions-runner/frontend/github-action-frontend/github-action-frontend
+      - name: Navigate to project directory
+        run: cd /actions-runner/frontend/github-action-frontend/github-action-frontend
 
-      # - name: Install Dependencies
-      #   run: |
-      #     cd /actions-runner/frontend/github-action-frontend/github-action-frontend
-      #     npm install  # Use `yarn install` if using Yarn
+      - name: Install Dependencies
+        run: |
+          cd /actions-runner/frontend/github-action-frontend/github-action-frontend
+          npm install  # Use `yarn install` if using Yarn
           
-      # - name: Build the Project
-      #   run: |
-      #     cd /actions-runner/frontend/github-action-frontend/github-action-frontend
-      #     npm run build  # Adjust command based on your project setup
+      - name: Build the Project
+        run: |
+          cd /actions-runner/frontend/github-action-frontend/github-action-frontend
+          npm run build  # Adjust command based on your project setup
 
-      # - name: Restart Nginx
-      #   run: sudo systemctl restart nginx
+      - name: Restart Nginx
+        run: sudo systemctl restart nginx
